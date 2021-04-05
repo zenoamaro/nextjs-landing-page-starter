@@ -1,13 +1,12 @@
 import styles from './SubscribeInput.module.css';
-import cx from '../utils/cx';
 import Button from './Button';
+import cx from '../utils/cx';
 
 export default function SubscribeInput(p: {
   location?: 'body' | 'accent',
   className?: string,
   action?: string,
   placeholder?: string,
-  url: string,
 }) {
   const action = p.action ?? 'Join early access';
   const placeholder = p.placeholder ?? 'you@company.com';
@@ -20,9 +19,10 @@ export default function SubscribeInput(p: {
   );
 
   return (
-    <form method="POST" action={p.url}>
+    <form method="GET" action="/api/subscribe"> {/* Yes, GET */}
       <div className={className}>
-        <input className={styles.input} type="email" placeholder={placeholder}/>
+        <input className={styles.input} name="email" type="email" required placeholder={placeholder}/>
+        <input className={styles.pooh} name="b_3951c19vtqb9xa0we_9rv293" tabIndex={-1} defaultValue=""/>
         <Button className={styles.button} size="large">{action}</Button>
       </div>
     </form>

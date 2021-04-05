@@ -1,4 +1,6 @@
-.container {
+.container {}
+
+.container:not(:first-child) {
   border-top: solid var(--section-separator-width) var(--section-separator-color);
 }
 

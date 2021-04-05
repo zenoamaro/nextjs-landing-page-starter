@@ -7,6 +7,7 @@ import Footer from '../blocks/Footer';
 import Header from '../blocks/Header';
 import Hero from '../blocks/Hero';
 import Highlights from '../blocks/Highlights';
+import Notice from '../components/Notice';
 import * as Global from '../global/global.json';
 
 const LOREM = `
@@ -24,6 +25,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Notice id="subscribed">
+        Thank you for subscribing
+      </Notice>
+
       <Header
         id="top"
         title={Global.product}
@@ -36,7 +41,6 @@ export default function Home() {
           illustration=""
           subscribePlaceholder="you@email.com"
           subscribeAction="Join early access"
-          subscribeUrl={Global.subscribeUrl}
         />
 
         <Benefits
@@ -88,7 +92,6 @@ export default function Home() {
           illustration=""
           subscribePlaceholder="you@email.com"
           subscribeAction="Join early access"
-          subscribeUrl={Global.subscribeUrl}
         />
       </main>
 

@@ -1,0 +1,15 @@
+.container {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  padding: 8px 24px;
+  text-align: center;
+  background: greenyellow;
+  border-radius: 0 0 4px 4px;
+}
+.container:target {
+  display: block;
+}

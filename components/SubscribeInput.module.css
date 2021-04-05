@@ -1,10 +1,12 @@
 .container {
+  position: relative;
   display: flex;
   align-items: stretch;
   box-shadow: 0 4px 18px #0002;
   border-radius: 7px;
   padding: 4px;
   background: #fffd;
+  overflow: hidden;
 }
 
 .input {
@@ -22,6 +24,11 @@
 .input:focus {
   outline: none;
   background: lightyellow;
+}
+
+.pooh {
+  position: absolute;
+  z-index: -1;
 }
 
 .button {
