@@ -45,7 +45,9 @@
 }
 
 .highlight-illustration {
-  height: 250px;
+  width: 100%;
+  max-width: 450px;
+  min-height: 300px;
   background: #eee;
   border-radius: 8px;
 }
@@ -73,16 +75,14 @@
     justify-content: stretch;
     max-width: initial;
   }
-  .highlight-illustration {
-    flex: 1 1 0;
-  }
+  .highlight-illustration {}
   .highlight-content {
     flex: 1 1 0;
-    margin-left: 32px;
+    margin-left: 48px;
     margin-top: 0;
   }
   .highlight:nth-child(even) .highlight-content {
     margin-left: 0;
-    margin-right: 32px;
+    margin-right: 48px;
   }
 }
