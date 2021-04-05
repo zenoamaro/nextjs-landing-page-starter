@@ -1,0 +1,38 @@
+.container {
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.container-size-normal {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 12px;
+}
+
+.container-size-small {
+  padding: 8px 12px;
+}
+
+.container-type-primary.container-location-body {
+  background: var(--accent);
+  border: none;
+  color: var(--text-accent);
+}
+.container-type-primary.container-location-accent {
+  background: var(--text-accent);
+  border: none;
+  color: var(--accent);
+}
+
+.container-type-secondary.container-location-body {
+  background: transparent;
+  border: solid 2px var(--accent);
+  color: var(--accent);
+}
+.container-type-secondary.container-location-accent {
+  background: transparent;
+  border: solid 2px var(--text-accent);
+  color: var(--text-accent);
+}

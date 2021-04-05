@@ -1,0 +1,13 @@
+.container {
+  margin-top: -64px;
+  padding: 16px 24px;
+  color: var(--text-accent);
+}
+
+.content {
+  display: flex;
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}

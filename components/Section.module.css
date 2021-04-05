@@ -1,0 +1,31 @@
+.container {
+  border-top: solid var(--section-separator-width) var(--section-separator-color);
+}
+
+.container-size-normal {
+  padding: 80px 24px 90px;
+}
+
+.container-size-narrow {
+  padding: 16px 24px;
+}
+
+.container-background-normal {
+  background: var(--background);
+}
+
+.container-background-alternate {
+  background: var(--background-alternate);
+}
+
+.container-background-accent {
+  background: var(--accent);
+}
+.container.container-background-accent {
+  color: var(--text-accent)
+}
+
+.content {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+}

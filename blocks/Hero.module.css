@@ -1,0 +1,33 @@
+.container {
+  padding-top: 140px;
+}
+
+.header {
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+.title {
+  font-size: var(--title-font-size);
+  font-weight: var(--title-font-weight);
+  line-height: var(--title-line-height);
+  letter-spacing: var(--title-letter-spacing);
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.subtitle {
+  font-size: var(--subtitle-font-size);
+  font-weight: var(--subtitle-font-weight);
+  line-height: var(--subtitle-line-height);
+  letter-spacing: var(--subtitle-letter-spacing);
+  text-align: center;
+  color: var(--text-shade);
+}
+
+.illustration {
+  width: 100%;
+  background: #ccc;
+  height: 500px;
+}

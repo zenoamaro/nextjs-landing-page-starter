@@ -1,0 +1,12 @@
+.container {
+  margin-bottom: -64px;
+  padding: 16px 24px;
+}
+
+.content {
+  display: flex;
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
