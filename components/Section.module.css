@@ -20,8 +20,6 @@
 
 .container-background-accent {
   background: var(--accent);
-}
-.container.container-background-accent {
   color: var(--text-accent)
 }
 

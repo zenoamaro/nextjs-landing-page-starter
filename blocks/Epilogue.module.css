@@ -1,5 +1,5 @@
 .container {
-  padding-bottom: 140px;
+  padding-bottom: 140px !important;
 }
 
 .header {
@@ -24,6 +24,12 @@
   letter-spacing: var(--subtitle-letter-spacing);
   text-align: center;
   color: var(--text-accent-shade);
+}
+
+.subscribe {
+  margin: 0 auto;
+  margin-top: 24px;
+  max-width: 550px;
 }
 
 .illustration {

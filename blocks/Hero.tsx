@@ -1,6 +1,7 @@
 import styles from './Hero.module.css';
 import Section from '../components/Section';
 import cx from '../utils/cx';
+import SubscribeInput from '../components/SubscribeInput';
 
 export default function Hero(p: {
   title: string,
@@ -18,6 +19,7 @@ export default function Hero(p: {
       <div className={styles.header}>
         <h1 className={styles.title}>{p.title}</h1>
         <p className={styles.subtitle}>{p.subtitle}</p>
+        <SubscribeInput className={styles.subscribe}/>
       </div>
       <div className={styles.illustration}/>
     </Section>
