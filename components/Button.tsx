@@ -5,6 +5,8 @@ export default function Button(p: {
   size?: 'large' | 'normal',
   type?: 'primary' | 'secondary',
   location?: 'body' | 'accent',
+  href?: string,
+  onClick?(): void,
   className?: string,
   children: React.ReactNode,
 }) {
@@ -20,9 +22,17 @@ export default function Button(p: {
     p.className,
   );
 
+  if (p.href) {
+    return (
+      <a className={className} href={p.href} onClick={p.onClick}>
+        {p.children}
+      </a>
+    )
+  }
+
   return (
-    <div className={className}>
+    <button className={className} onClick={p.onClick}>
       {p.children}
-    </div>
+    </button>
   )
 }

@@ -7,6 +7,7 @@ export default function SubscribeInput(p: {
   className?: string,
   action?: string,
   placeholder?: string,
+  url: string,
 }) {
   const action = p.action ?? 'Join early access';
   const placeholder = p.placeholder ?? 'you@company.com';
@@ -19,7 +20,7 @@ export default function SubscribeInput(p: {
   );
 
   return (
-    <form>
+    <form method="POST" action={p.url}>
       <div className={className}>
         <input className={styles.input} type="email" placeholder={placeholder}/>
         <Button className={styles.button} size="large">{action}</Button>

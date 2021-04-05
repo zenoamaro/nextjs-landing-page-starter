@@ -26,9 +26,9 @@ export default function Benefits(p: {
       </div>
 
       <ul className={styles.benefits}>
-        {p.benefits.map((item) => {
+        {p.benefits.map((item, i) => {
           return (
-            <li className={styles.benefit}>
+            <li key={i} className={styles.benefit}>
               <div className={styles['benefit-illustration']}/>
               <div className={styles['benefit-content']}>
                 <h3 className={styles['benefit-title']}>{item.title}</h3>

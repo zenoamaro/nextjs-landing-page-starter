@@ -7,6 +7,9 @@ export default function Break(p: {
   title: string,
   subtitle: string,
   illustration: string,
+  action?: string,
+  actionHref?: string,
+  onActionClick?(): void,
   className?: string,
 }) {
   const className = cx(
@@ -22,7 +25,7 @@ export default function Break(p: {
           <h1 className={styles.title}>{p.title}</h1>
           <p className={styles.subtitle}>{p.subtitle}</p>
         </div>
-        <Button size="large" location="accent">Sign up for early access</Button>
+        {p.action && <Button href={p.actionHref} onClick={p.onActionClick} size="large" location="accent">{p.action}</Button>}
       </div>
     </Section>
   );

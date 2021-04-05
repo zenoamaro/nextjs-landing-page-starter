@@ -3,6 +3,10 @@ import Button from '../components/Button';
 import cx from '../utils/cx';
 
 export default function Header(p: {
+  title: string,
+  action?: string,
+  actionHref?: string,
+  onActionClick?(): void,
   className?: string,
 }) {
   const className = cx(
@@ -13,8 +17,8 @@ export default function Header(p: {
   return (
     <header className={className}>
       <div className={styles.content}>
-        LOGO
-        {/* <Button type="secondary">Sign up for early access</Button> */}
+        <div title={p.title}>{p.title}</div>
+        {p.action && <Button href={p.actionHref} onClick={p.onActionClick} type="secondary">{p.action}</Button>}
       </div>
     </header>
   );
