@@ -1,15 +1,12 @@
-.container {
-}
+.container {}
 
 .content {
-  display: flex;
-  align-items: center;
+  text-align: center;
 }
 
 .header {
   flex: 1 1 0;
-  margin-left: 32px;
-  margin-right: 32px;
+  margin: 32px 0;
 }
 
 .title {
@@ -33,4 +30,16 @@
   height: 80px;
   background: #eee;
   border-radius: 8px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 800px) {
+  .content {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  .header {
+    margin: 0 var(--page-padding);
+  }
 }

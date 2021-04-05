@@ -3,7 +3,7 @@
 }
 
 .header {
-  max-width: 650px;
+  max-width: var(--section-header-max-width);
   margin: 0 auto;
   margin-bottom: 64px;
 }

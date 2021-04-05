@@ -5,8 +5,10 @@ import Button from './Button';
 export default function SubscribeInput(p: {
   location?: 'body' | 'accent',
   className?: string,
+  action?: string,
   placeholder?: string,
 }) {
+  const action = p.action ?? 'Join early access';
   const placeholder = p.placeholder ?? 'you@company.com';
   const location = p.location ?? 'body';
 
@@ -20,7 +22,7 @@ export default function SubscribeInput(p: {
     <form>
       <div className={className}>
         <input className={styles.input} type="email" placeholder={placeholder}/>
-        <Button className={styles.button} size="large">Sign up for early access</Button>
+        <Button className={styles.button} size="large">{action}</Button>
       </div>
     </form>
   )

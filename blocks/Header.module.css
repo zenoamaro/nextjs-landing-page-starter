@@ -1,9 +1,11 @@
 .container {
-  margin-bottom: -64px;
-  padding: 16px 24px;
+  height: var(--page-header-height);
+  margin-bottom: calc(-1 * var(--page-header-height));
+  padding: 16px var(--page-padding);
 }
 
 .content {
+  height: 100%;
   display: flex;
   max-width: var(--page-max-width);
   margin: 0 auto;

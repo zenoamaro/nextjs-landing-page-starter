@@ -30,8 +30,8 @@
   background: var(--accent);
 }
 .container-type-primary.container-location-body:hover {
-  top: -6px;
-  box-shadow: 0 6px 0 #0002, 0 6px 0 var(--accent);
+  top: -3px;
+  box-shadow: 0 3px 0 #0002, 0 3px 0 var(--accent);
 }
 .container-type-primary.container-location-body:active {
   top: 0px;
@@ -44,8 +44,8 @@
   background: var(--text-accent);
 }
 .container-type-primary.container-location-accent:hover {
-  top: -6px;
-  box-shadow: 0 6px 0 #0002, 0 6px 0 var(--text-accent);
+  top: -3px;
+  box-shadow: 0 3px 0 #0002, 0 3px 0 var(--text-accent);
 }
 .container-type-primary.container-location-accent:active {
   top: 0px;

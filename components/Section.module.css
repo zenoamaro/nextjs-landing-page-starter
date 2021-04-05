@@ -3,11 +3,11 @@
 }
 
 .container-size-normal {
-  padding: 80px 24px 90px;
+  padding: 80px var(--page-padding) 90px;
 }
 
 .container-size-narrow {
-  padding: 32px 24px;
+  padding: 32px var(--page-padding);
 }
 
 .container-background-normal {

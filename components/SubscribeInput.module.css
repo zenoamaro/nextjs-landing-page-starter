@@ -8,7 +8,9 @@
 }
 
 .input {
-  flex: 1 1 auto;
+  display: block;
+  flex: 1 1 0;
+  width: 1px; /* Hack */
   padding: 12px 16px;
   margin-right: 4px;
   text-align: center;
