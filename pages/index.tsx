@@ -25,6 +25,7 @@ export default function Home() {
       </Head>
 
       <Header
+        id="top"
         title={Global.product}
       />
 

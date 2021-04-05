@@ -2,9 +2,10 @@ import styles from './Section.module.css';
 import cx from '../utils/cx';
 
 export default function Section(p: {
+  id?: string,
+  className?: string,
   size?: 'normal' | 'narrow',
   background?: 'normal' | 'alternate' | 'accent',
-  className?: string,
   children: React.ReactNode,
 }) {
   const size = p.size ?? 'normal';
@@ -18,7 +19,7 @@ export default function Section(p: {
   );
 
   return (
-    <section className={className}>
+    <section id={p.id} className={className}>
       <div className={styles.content}>
         {p.children}
       </div>

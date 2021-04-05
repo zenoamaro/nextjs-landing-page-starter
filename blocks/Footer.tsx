@@ -3,11 +3,12 @@ import Button from '../components/Button';
 import cx from '../utils/cx';
 
 export default function Footer(p: {
+  id?: string,
+  className?: string,
   title: string,
   action?: string,
   actionHref?: string,
   onActionClick?(): void,
-  className?: string,
 }) {
   const className = cx(
     styles.container,
@@ -15,7 +16,7 @@ export default function Footer(p: {
   );
 
   return (
-    <footer className={className}>
+    <footer id={p.id} className={className}>
       <div className={styles.content}>
         <div title={p.title}>{p.title}</div>
         <div>&copy; {(new Date).getFullYear()}, {p.title}</div>

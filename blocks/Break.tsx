@@ -4,13 +4,14 @@ import cx from '../utils/cx';
 import Button from '../components/Button';
 
 export default function Break(p: {
+  id?: string,
+  className?: string,
   title: string,
   subtitle: string,
   illustration: string,
   action?: string,
   actionHref?: string,
   onActionClick?(): void,
-  className?: string,
 }) {
   const className = cx(
     styles.container,
@@ -18,7 +19,7 @@ export default function Break(p: {
   );
 
   return (
-    <Section className={className} size="narrow" background="accent">
+    <Section id={p.id} className={className} size="narrow" background="accent">
       <div className={styles.content}>
         <div className={styles.illustration}/>
         <div className={styles.header}>
