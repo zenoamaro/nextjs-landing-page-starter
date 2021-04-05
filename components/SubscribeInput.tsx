@@ -19,7 +19,7 @@ export default function SubscribeInput(p: {
   return (
     <div className={className}>
       <input className={styles.input} type="email" placeholder={placeholder}/>
-      <Button className={styles.button} location={p.location}>Sign up for early access</Button>
+      <Button className={styles.button} size="large">Sign up for early access</Button>
     </div>
   )
 }

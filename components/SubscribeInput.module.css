@@ -2,18 +2,20 @@
   display: flex;
   align-items: stretch;
   box-shadow: 0 4px 18px #0002;
-  border-radius: 4px;
+  border-radius: 7px;
+  padding: 4px;
+  background: #fffd;
 }
 
 .input {
   flex: 1 1 auto;
   padding: 12px 16px;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border: none;
-  background: #fffd;
+  margin-right: 4px;
   text-align: center;
   color: var(--text);
+  background: transparent;
+  border-radius: 4px;
+  border: none;
 }
 .input:focus {
   outline: none;
@@ -23,7 +25,5 @@
 .button {
   flex: 0 0 auto;
   height: auto;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
   padding: 12px 24px;
 }

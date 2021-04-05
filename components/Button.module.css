@@ -1,7 +1,20 @@
 .container {
+  position: relative;
   display: inline-block;
   border-radius: 4px;
   font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: .1s;
+  top: 0;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.container-size-large {
+  height: 48px;
+  padding: 0 24px;
 }
 
 .container-size-normal {
@@ -9,21 +22,35 @@
   align-items: center;
   height: 32px;
   padding: 0 12px;
-}
-
-.container-size-small {
-  padding: 8px 12px;
+  font-size: 14px;
 }
 
 .container-type-primary.container-location-body {
-  background: var(--accent);
-  border: none;
   color: var(--text-accent);
+  background: var(--accent);
 }
+.container-type-primary.container-location-body:hover {
+  top: -6px;
+  box-shadow: 0 6px 0 #0002, 0 6px 0 var(--accent);
+}
+.container-type-primary.container-location-body:active {
+  top: 0px;
+  box-shadow: none;
+  background: var(--accent);
+}
+
 .container-type-primary.container-location-accent {
-  background: var(--text-accent);
-  border: none;
   color: var(--accent);
+  background: var(--text-accent);
+}
+.container-type-primary.container-location-accent:hover {
+  top: -6px;
+  box-shadow: 0 6px 0 #0002, 0 6px 0 var(--text-accent);
+}
+.container-type-primary.container-location-accent:active {
+  top: 0px;
+  box-shadow: none;
+  background: var(--text-accent);
 }
 
 .container-type-secondary.container-location-body {
@@ -31,8 +58,25 @@
   border: solid 2px var(--accent);
   color: var(--accent);
 }
+.container-type-secondary.container-location-body:hover {
+  top: -3px;
+  box-shadow: 0 3px 0 var(--accent);
+}
+.container-type-secondary.container-location-body:active {
+  top: 0px;
+  box-shadow: none;
+}
+
 .container-type-secondary.container-location-accent {
   background: transparent;
   border: solid 2px var(--text-accent);
   color: var(--text-accent);
+}
+.container-type-secondary.container-location-accent:hover {
+  top: -3px;
+  box-shadow: 0 3px 0 var(--text-accent);
+}
+.container-type-secondary.container-location-accent:active {
+  top: 0px;
+  box-shadow: none;
 }

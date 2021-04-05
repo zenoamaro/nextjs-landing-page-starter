@@ -14,7 +14,7 @@ export default function Footer(p: {
     <footer className={className}>
       <div className={styles.content}>
         LOGO
-        <Button location="accent">Sign up for early access</Button>
+        <Button location="accent" type="secondary">Sign up for early access</Button>
       </div>
     </footer>
   );

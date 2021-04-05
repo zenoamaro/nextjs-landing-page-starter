@@ -14,7 +14,7 @@ export default function Header(p: {
     <header className={className}>
       <div className={styles.content}>
         LOGO
-        <Button>Sign up for early access</Button>
+        <Button type="secondary">Sign up for early access</Button>
       </div>
     </header>
   );

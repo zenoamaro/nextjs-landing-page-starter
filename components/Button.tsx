@@ -2,7 +2,7 @@ import styles from './Button.module.css';
 import cx from '../utils/cx';
 
 export default function Button(p: {
-  size?: 'normal' | 'small',
+  size?: 'large' | 'normal',
   type?: 'primary' | 'secondary',
   location?: 'body' | 'accent',
   className?: string,
