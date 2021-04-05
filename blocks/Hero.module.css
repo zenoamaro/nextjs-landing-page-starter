@@ -34,6 +34,7 @@
 
 .illustration {
   width: 100%;
-  background: #ccc;
   height: 500px;
+  background: #eee;
+  border-radius: 8px;
 }

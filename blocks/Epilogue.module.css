@@ -36,5 +36,6 @@
   width: 320px;
   height: 240px;
   margin: 0 auto;
-  background: #ccc;
+  background: #eee;
+  border-radius: 8px;;
 }

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Benefits from '../blocks/Benefits';
+import Break from '../blocks/Break';
 import Epilogue from '../blocks/Epilogue';
 import Features from '../blocks/Features';
 import Footer from '../blocks/Footer';
@@ -33,6 +34,12 @@ export default function Home() {
             {illustration:'', title:'Title', text:'Text'},
             {illustration:'', title:'Title', text:'Text'},
           ]}
+        />
+
+        <Break
+          title="Clear headline that explains your product’s benefit"
+          subtitle="Explain your unique solution, how it solves your customer's problem."
+          illustration=""
         />
 
         <Highlights

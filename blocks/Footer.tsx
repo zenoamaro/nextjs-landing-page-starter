@@ -13,8 +13,9 @@ export default function Footer(p: {
   return (
     <footer className={className}>
       <div className={styles.content}>
-        LOGO
-        <Button location="accent" type="secondary">Sign up for early access</Button>
+        <div>LOGO</div>
+        <div>&copy; 2021, LOGO</div>
+        {/* <Button location="accent" type="secondary">Sign up for early access</Button> */}
       </div>
     </footer>
   );
