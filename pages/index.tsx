@@ -25,14 +25,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Notice id="subscribed">
-        Thank you for subscribing
-      </Notice>
-
-      <Header
-        id="top"
-        title={Global.product}
-      />
+      <Notice id="subscribed">Thank you for subscribing</Notice>
+      <Header id="top" title={Global.product}/>
 
       <main>
         <Hero
@@ -40,58 +34,58 @@ export default function Home() {
           subtitle="Explain your unique solution, how it solves your customer's problem."
           illustration=""
           subscribePlaceholder="you@email.com"
-          subscribeAction="Join early access"
+          subscribeAction="When is it ready?"
         />
 
         <Benefits
           background="alternate"
-          title="Benefits"
-          subtitle="Explain your unique solution in short"
+          title="Headline that describes how your product solves the problem"
+          subtitle="Start by defining the pain your customer has right now, for example: clients not paying their invoices. Then write how your solution solves this problem for your customers."
           benefits={[
-            {illustration:'', title:'Some interesting title', text:LOREM},
-            {illustration:'', title:'Some interesting title', text:LOREM},
-            {illustration:'', title:'Some interesting title', text:LOREM},
+            {illustration:'', title:'Main benefit of your product', text:'Brief explanation of why and how this benefit will help your customers'},
+            {illustration:'', title:'Main benefit of your product', text:'Brief explanation of why and how this benefit will help your customers'},
+            {illustration:'', title:'Main benefit of your product', text:'Brief explanation of why and how this benefit will help your customers'},
           ]}
         />
 
         <Break
-          title="Clear headline that explains your product’s benefit"
-          subtitle="Explain your unique solution, how it solves your customer's problem."
+          title="Risk Reduction: Try Product free for 14 days"
+          subtitle="This is an in-betwen CTA for visitors that already got convinced."
           illustration=""
-          action="Join early access"
+          action="When is it ready?"
           onActionClick={() => window.scrollTo({top:99999, behavior:'smooth'})}
         />
 
         <Highlights
-          title="Highlights"
-          subtitle="Explain your unique solution in short"
+          title="Highlights of your product"
+          subtitle="Explain why your solution deserves attention"
           highlights={[
-            {illustration:'', title:'Some interesting title', text:LOREM},
-            {illustration:'', title:'Some interesting title', text:LOREM},
-            {illustration:'', title:'Some interesting title', text:LOREM},
+            {illustration:'', title:'Now go deeper into what your product offers. Word it as benefits, not as features', text:'“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.'},
+            {illustration:'', title:'Now go deeper into what your product offers. Word it as benefits, not as features', text:'“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.'},
+            {illustration:'', title:'Now go deeper into what your product offers. Word it as benefits, not as features', text:'“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.'},
           ]}
         />
 
         <Features
           background="alternate"
-          title="Features"
-          subtitle="Explain your unique solution in short"
+          title="But wait, there is more"
+          subtitle="Describe the full extent of your product"
           features={[
-            {illustration:'', title:'Some interesting title', text:LOREM},
-            {illustration:'', title:'Some interesting title', text:LOREM},
-            {illustration:'', title:'Some interesting title', text:LOREM},
-            {illustration:'', title:'Some interesting title', text:LOREM},
-            {illustration:'', title:'Some interesting title', text:LOREM},
-            {illustration:'', title:'Some interesting title', text:LOREM},
+            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
+            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
+            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
+            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
+            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
+            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
           ]}
         />
 
         <Epilogue
-          title="Clear headline that explains your product’s benefit"
-          subtitle="Explain your unique solution, how it solves your customer's problem."
+          title="Ask if your visitor wants to solve problem X today"
+          subtitle="Explain how your solution will solve this problem and ask them to start a free trial, or any other low-key CTA they could take"
           illustration=""
           subscribePlaceholder="you@email.com"
-          subscribeAction="Join early access"
+          subscribeAction="When is it ready?"
         />
       </main>
 
