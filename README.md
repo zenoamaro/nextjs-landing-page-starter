@@ -1,10 +1,11 @@
 Next.js Landing Page Starter Kit
 ===
+[Live demo](https://nextjs-landing-page-starter.vercel.app)
 
 
 ## Usage
 
-Install dependencies:
+Clone the project and install dependencies:
 
 ```sh
 npm install
